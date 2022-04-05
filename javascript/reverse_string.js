@@ -1,6 +1,12 @@
 function reverseString(str) {
-  // type your code here
+  let reverseString = ""
+  for (i = str.length - 1; i >= 0; i--) {
+    reverseString += str[i]
+  }
+  return reverseString
 }
+
+reverseString("hello")
 
 if (require.main === module) {
   // add your own tests in here
